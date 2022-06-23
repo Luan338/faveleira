@@ -1,0 +1,141 @@
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.container_header{
+    background-color: #000;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    border-bottom: 2px solid white;
+    z-index: 9999;
+}
+
+.container_navigation{
+    margin: 0 auto;
+    max-width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation{
+    width: 32%;
+}
+
+.navigation ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navigation ul li span{
+    color: white;
+    font-size: 1rem;
+}
+
+
+.form_input{
+    width: 14%;
+    position: relative;
+    right: 100px;
+}
+
+.input_search{
+    width: 250%;
+    border-radius: 20px;
+    border: none;
+    padding: .3rem;
+    outline: none;
+    transition: .5s ease-in-out;
+}
+.input_search:hover, .input_search:focus{
+    outline: 3px solid #d1632f;
+    transform: scale(1.1);
+}
+
+.input_search::placeholder{
+    color: #d1632f;
+    font-style: italic;
+}
+
+/*SEGUNDA PARTE DA NAVEGAÇÃO DA HEADER*/
+.box_navigation{
+    padding-top: 110px;
+    background-color: #000;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.box_navigation nav{
+     padding: 1.1rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.box_navigation nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_navigation nav ul li{
+    cursor: pointer;
+}
+
+.box_collabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_collabs .icon{
+    transform: rotate(180deg);
+    transition: .5s ease;
+}
+
+.box_collabs:hover .icon{
+    transform: rotate(360deg);
+}
+
+
+/* MOBILE */
+@media(max-width: 1020px){
+    .navigation ul li span{
+        font-size: .7rem;
+    }
+}
+@media(max-width: 840px){
+    .box_navigation nav ul li{
+        font-size: .7rem;
+    }
+}
+
+/* MENU MOBILE */
+@media(max-width: 760px){
+    .box_list span, .box_list .icon{
+        display: none;
+    }
+    .form_input{
+        width: 20%;
+        right: 30px;
+    }
+}
+
+@media(max-width: 645px){
+    .box_navigation{
+        display: none;
+    }
+    .Logo{
+        width: 100px;
+    }
+}

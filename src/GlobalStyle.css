@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body, input, button{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #fffadc;
+}
+
+input{
+    color: black;
+}
+
+.group{
+    background-color: #e21744;
+    width: 100%;
+    height: 5rem;
+    
+}
+
+.box_card{
+    max-width: 1100px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
