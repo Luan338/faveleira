@@ -1,3 +1,5 @@
+import "./ProductList.css";
+
 export function ProductList() {
     // ITENS
     const SubItens = [
@@ -16,11 +18,11 @@ export function ProductList() {
     ];
 
     return (
-        <nav>
+        <nav className="nav_product">
             <ul>
-                {SubItens.map(({ id, text }) => {
+                {SubItens.map(({ id, text }) => (
                     <li key={id}>{text}</li>
-                })}
+                ))}
             </ul>
         </nav>
     )

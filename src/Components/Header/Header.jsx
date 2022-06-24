@@ -2,8 +2,11 @@ import Logo from "../../Img/logo.png";
 import "./Header.css";
 import { User, PhoneCall, ShoppingCart, CaretDown } from "phosphor-react";
 import { SellerLink } from "../NavItens/SellerLink/SellerLink";
+import { useState } from "react";
 
 export function Header() {
+
+    const [seller, setSellet] = useState(false);
 
     return (
         <>
@@ -40,18 +43,21 @@ export function Header() {
                     <ul>
                         <li>Início</li>
                         <li>Quem somos?</li>
-                        <li className='box_collabs'>
+                        <li className='box_collabs' onMouseOver={() => { setSellet(!seller) }}>
                             Collabs
                             <CaretDown size={20} color="#ffffff" className="icon" />
                         </li>
+                        {seller && (
+                            <SellerLink />
+                        )
+                        }
                         <li>Ajude a gente a continuar!</li>
                         <li>Trocas e devoluções</li>
                         <li>Politica de privacidade</li>
-                        <li></li>
                     </ul>
                 </nav>
             </section>
-            <SellerLink />
+
         </>
     )
 }

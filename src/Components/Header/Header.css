@@ -86,6 +86,7 @@
 .box_navigation nav ul{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .box_navigation nav ul li{

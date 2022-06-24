@@ -1,3 +1,8 @@
+import "./SellerLink.css";
+import { ProductList } from "../ProductList/ProductList.jsx";
+import { useState } from "react";
+import { CaretRight } from "phosphor-react";
+
 export function SellerLink() {
     // NAVEGAÇÃO PARA O ITENS
     const NavItens = [
@@ -7,13 +12,21 @@ export function SellerLink() {
         }
     ];
 
+    const [product, setProduct] = useState(false);
+
     return (
-        <nav>
+        <nav className="nav_seller">
             <ul>
                 {NavItens.map(({ id, text }) => (
-                    <li key={id}>{text}</li>
+                    <li
+                        key={id} onMouseOver={() => { setProduct(!product) }}>
+                        {text}<CaretRight size={23} color="#ffffff" weight="fill" />
+                    </li>
                 ))}
             </ul>
+            {product && (
+                <ProductList />
+            )}
         </nav>
     )
 }
