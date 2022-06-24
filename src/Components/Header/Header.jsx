@@ -1,6 +1,7 @@
 import Logo from "../../Img/logo.png";
 import "./Header.css";
-import { User, PhoneCall, ShoppingCart, MagnifyingGlass, CaretDown } from "phosphor-react";
+import { User, PhoneCall, ShoppingCart, CaretDown } from "phosphor-react";
+import { SellerLink } from "../NavItens/SellerLink/SellerLink";
 
 export function Header() {
 
@@ -15,7 +16,6 @@ export function Header() {
                             placeholder='  O que você procura , cria?'
                             className='input_search'
                         />
-                        {/* <MagnifyingGlass className='lupa' size={25} color="#d1632f" /> */}
                     </form>
                     <nav className='navigation'>
                         <ul>
@@ -47,9 +47,11 @@ export function Header() {
                         <li>Ajude a gente a continuar!</li>
                         <li>Trocas e devoluções</li>
                         <li>Politica de privacidade</li>
+                        <li></li>
                     </ul>
                 </nav>
             </section>
+            <SellerLink />
         </>
     )
 }
