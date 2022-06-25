@@ -1,0 +1,31 @@
+footer{
+    width: 100%;
+    height: 10rem;
+    padding: 2rem;
+    background-color: #f2891f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap_footer{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box_logo_footer{
+    width: 200px;
+    height: 100px;
+}
+
+.box_logo_footer p{
+    font-size: 1rem;
+}
+
+.logo_footer{
+    width: 180px;
+}

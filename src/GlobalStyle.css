@@ -5,6 +5,7 @@
     list-style: none;
     text-decoration: none;
     color: white;
+    scroll-behavior: smooth;
 }
 
 body, input, button{

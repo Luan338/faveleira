@@ -1,9 +1,9 @@
+import { Artifacts } from "../../Components/Artifacts/Artifacts.jsx";
 import { Album } from "../../Components/Carousel/Album.jsx";
 import "../../GlobalStyle.css";
 import delivery from "../../Img/entrega.png";
 import payment from "../../Img/pagamento.png";
 import contact from "../../Img/whatsapp.png";
-
 
 export function Index() {
     return (
@@ -33,6 +33,9 @@ export function Index() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div>
+                <Artifacts />
             </div>
         </section>
     )
