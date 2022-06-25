@@ -22,10 +22,11 @@
 }
 
 .navigation{
-    width: 32%;
+    width: 35%;
 }
 
 .navigation ul{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,13 +60,27 @@
     transition: .5s ease-in-out;
 }
 .input_search:hover, .input_search:focus{
-    outline: 3px solid #d1632f;
+    outline: 3px solid #e21744;
     transform: scale(1.1);
 }
 
 .input_search::placeholder{
-    color: #d1632f;
+    color: #e21744;
     font-style: italic;
+}
+
+.box_list_myAccount{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    border-bottom: 1px solid #e21744;
+    transition: .5s ease-in-out;
+}
+
+.box_list_myAccount:hover span{
+    color: #e21744;
 }
 
 /*SEGUNDA PARTE DA NAVEGAÇÃO DA HEADER*/

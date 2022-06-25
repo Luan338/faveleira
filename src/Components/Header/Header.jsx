@@ -26,13 +26,13 @@ export function Header() {
                                 <PhoneCall size={27} color="#ffffff" className='icon' alt="contact" />
                                 <span>Atendimento</span>
                             </li>
-                            <li className='box_list'>
-                                <User size={27} color="#ffffff" className='icon' alt="User" />
-                                <span>Minha conta</span>
-                            </li>
                             <li>
                                 <ShoppingCart size={27} color="#ffffff" alt="Shopping Cart" />
                                 <span>Meu carrinho</span>
+                            </li>
+                            <li className='box_list_myAccount'>
+                                <User size={27} color="#ffffff" className='icon' alt="User" />
+                                <span>Minha conta</span>
                             </li>
                         </ul>
                     </nav>

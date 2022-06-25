@@ -1,5 +1,5 @@
 .nav_seller{
-    background-color: #5c9927;
+    background-color: #e21744;
     position: absolute;
     width: 200px !important;
     top: 180%;
@@ -22,5 +22,5 @@
 }
 
 .nav_seller ul li:hover{
-    background-color: #e21744;
+    background-color: #6f0c22;
 }

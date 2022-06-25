@@ -35,7 +35,10 @@ export function Index() {
                 </div>
             </div>
             <div>
-                <Artifacts />
+                <Artifacts id="produtos" />
+                <nav className="navigation_pages">
+                    <span className="page">1</span>
+                </nav>
             </div>
         </section>
     )

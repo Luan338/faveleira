@@ -29,3 +29,29 @@ footer{
 .logo_footer{
     width: 180px;
 }
+
+.contact_footer{
+    width: 250px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact_footer div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contact_footer div span{
+    margin-left: 10px;
+}
+
+.figure_socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.2rem;
+    width: 150px;
+}
