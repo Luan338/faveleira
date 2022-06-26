@@ -56,6 +56,8 @@ input{
     height: 40px;
     object-fit: cover;
 }
+/* FIM CARD */
+
 
 .navigation_pages{
     width: 100%;
@@ -72,4 +74,21 @@ input{
     text-align: center;
     border-radius: 50%;
     cursor: pointer;
+}
+
+
+/* MOBILE */
+@media(max-width: 950px){
+    .group_card div strong, .group_card div p{
+        font-size: .8rem;
+    }
+    .group_card_diference div strong, .group_card_diference div p{
+        font-size: .8rem;
+    }
+    .group_card{
+        width: 260px;
+    }
+    .group_card_diference{
+        width: 300px;
+    }
 }
