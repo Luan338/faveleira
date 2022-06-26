@@ -9,6 +9,7 @@ export function Index() {
     return (
         <section>
             <Album />
+
             <div className="group">
                 <div className="box_card">
                     <div className='group_card'>
