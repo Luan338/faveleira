@@ -7,12 +7,15 @@ import { useState } from "react";
 export function Header() {
 
     const [seller, setSellet] = useState(false);
+    const [openmodal, setModal] = useState(false);
 
     return (
         <>
             <header className='container_header'>
                 <section className='container_navigation'>
-                    <img className='logo' src={Logo} alt="Logo - Faveleira" />
+                    <a href="#">
+                        <img className='logo' src={Logo} alt="Logo - Faveleira" />
+                    </a>
                     <form className='form_input'>
                         <input
                             type="text"
@@ -22,7 +25,7 @@ export function Header() {
                     </form>
                     <nav className='navigation'>
                         <ul>
-                            <li className='box_list'>
+                            <li className='box_list' onClick={() => { setModal(true) }}>
                                 <PhoneCall size={27} color="#ffffff" className='icon' alt="contact" />
                                 <span>Atendimento</span>
                             </li>
@@ -57,7 +60,24 @@ export function Header() {
                     </ul>
                 </nav>
             </section>
-
+            <section className="box_slide">
+                {openmodal && (
+                    <>
+                        <div className="container_slide">
+                            <button className="exit_slide" onClick={() => { setModal(false) }}>X</button>
+                            <div className="group_attendance">
+                                <h2>Atendimento</h2>
+                            </div>
+                            <div>
+                                <figure>
+                                    <img src="" alt="" />
+                                </figure>
+                                <div></div>
+                            </div>
+                        </div>
+                    </>
+                )}
+            </section>
         </>
     )
 }

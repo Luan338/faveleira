@@ -14,11 +14,15 @@ export function Footer() {
                     <h4>Fale com a gente</h4>
                     <div>
                         <WhatsappLogo size={27} color="#ffffff" weight="duotone" />
-                        <span>(xx)xxxxx-xxxx</span>
+                        <a href="https://wa.me/5521998547324" target="_blank">
+                            <span>(21)99854-7324</span>
+                        </a>
                     </div>
                     <div>
                         <EnvelopeSimple size={27} color="#ffffff" weight="duotone" />
-                        <span>faveleiraoficial@gmail.com</span>
+                        <a href="mailto:faveleiraoficial@gmail.com">
+                            <span>faveleiraoficial@gmail.com</span>
+                        </a>
                     </div>
                 </div>
                 <div>

@@ -102,6 +102,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    z-index: 1;
 }
 
 .box_navigation nav ul li{
@@ -122,6 +123,89 @@
 .box_collabs:hover .icon{
     transform: rotate(360deg);
 }
+
+.box_slide{
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MODAL CONTATO */
+.container_slide{
+    top: 9rem;
+    z-index: 9;
+    max-width: 1100px;
+    width: 1200px;
+    height: 450px;
+    position: fixed;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 10px 0px #363636;
+    animation: fadeIn .4s forwards;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translate3d(20px, 0px, 0px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0px, 0, 0);
+    }
+}
+
+.exit_slide{
+    background-color: #e21744;
+    border: none;
+    padding: .7rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 1px 15px 0px #363636;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    position: relative;
+    left: 98%;
+    bottom:5px;
+}
+
+.group_attendance{
+    background-color: #e21744;
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+}
+
+.group_attendance h2{
+    margin-left: 1.5rem;
+}
+
+
+/* MOBILE MODAL CONTATO*/
+@media(max-width: 1145px){
+    .container_slide{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
 
 
 /* MOBILE */
