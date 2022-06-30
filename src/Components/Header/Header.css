@@ -22,7 +22,7 @@
 }
 
 .navigation{
-    width: 35%;
+    width: 20%;
 }
 
 .navigation ul{
@@ -53,7 +53,7 @@
 
 .input_search{
     width: 250%;
-    border-radius: 20px;
+    border-radius: 2px;
     border: none;
     padding: .3rem;
     outline: none;
@@ -69,18 +69,13 @@
     font-style: italic;
 }
 
-.box_list_myAccount{
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    border-bottom: 1px solid #e21744;
-    transition: .5s ease-in-out;
+.shopping, .heart{
+    position: relative;
 }
 
-.box_list_myAccount:hover span{
-    color: #e21744;
+.shopping span, .heart span{
+    position: absolute;
+    left: 30px;
 }
 
 /*SEGUNDA PARTE DA NAVEGAÇÃO DA HEADER*/
@@ -125,7 +120,7 @@
 }
 
 .box_slide{
-    max-width: 1100px;
+    /* max-width: 1100px; */
     margin: 0 auto;
     width: 100%;
     position: relative;
@@ -135,18 +130,27 @@
 }
 
 /* MODAL CONTATO */
-.container_slide{
-    top: 9rem;
+.wrap_slide{
+    background-color: rgba(64, 60, 60, .7);
+    top: 7rem;
     z-index: 9;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container_slide{
+    
     max-width: 1100px;
     width: 1200px;
     height: 450px;
-    position: fixed;
     color: black;
-    background-color: white;
+    background-color: #fff;
     border-radius: 5px;
-    border: none;
-    box-shadow: 0px 5px 10px 0px #363636;
+    border: 1px solid rgb(205, 203, 203);
     animation: fadeIn .4s forwards;
 }
 
@@ -162,22 +166,25 @@
 }
 
 .exit_slide{
-    background-color: #e21744;
+    background-color: transparent;
     border: none;
     padding: .7rem;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0px 1px 15px 0px #363636;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-
+    font-size: 1.4rem;
     position: relative;
-    left: 98%;
-    bottom:5px;
+    left: 95%;
+    top: 20px;
+    transition: .8s ease;
+}
+
+.exit_slide:hover{
+    border-bottom: 1px solid rgb(234, 234, 234);
+
 }
 
 .group_attendance{
@@ -187,7 +194,8 @@
     position: absolute;
     top: 0px;
     z-index: -1;
-    border-radius: 5px;
+    border-radius: 0px 5px;
+    border-bottom: 1px solid rgba(105, 105, 105, 0.1);
 
     display: flex;
     align-items: center;
@@ -195,6 +203,7 @@
 
 .group_attendance h2{
     margin-left: 1.5rem;
+    color: #fff;
 }
 
 

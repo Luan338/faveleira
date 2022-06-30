@@ -8,7 +8,7 @@ export const Album = () => {
 
     return (
         <div className='box_teste'>
-            <img className='img_album' src={imagem2} alt="Imagem principal" />
+            {/* <img className='img_album' src={imagem2} alt="Imagem principal" /> */}
             <div className='btn_direction'>
                 <button>
                     <ArrowLeft size={32} color="#5f0317" weight="fill" />

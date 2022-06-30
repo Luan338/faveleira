@@ -53,7 +53,7 @@ export function Artifacts() {
                             <li className="line"></li>
                             <li>{price}</li>
                         </div>
-                        <button>adicionar</button>
+                        <button title="adicionar ao carrinho">adicionar ao carr...</button>
                     </div>
                 </ul>
             ))}

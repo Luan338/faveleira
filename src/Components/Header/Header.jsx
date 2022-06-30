@@ -1,6 +1,6 @@
 import Logo from "../../Img/logo.png";
 import "./Header.css";
-import { User, PhoneCall, ShoppingCart, CaretDown } from "phosphor-react";
+import { User, Headset, Heart, CaretDown, ShoppingBag } from "phosphor-react";
 import { SellerLink } from "../NavItens/SellerLink/SellerLink";
 import { useState } from "react";
 
@@ -25,17 +25,19 @@ export function Header() {
                     </form>
                     <nav className='navigation'>
                         <ul>
-                            <li className='box_list' onClick={() => { setModal(true) }}>
-                                <PhoneCall size={27} color="#ffffff" className='icon' alt="contact" />
-                                <span>Atendimento</span>
-                            </li>
                             <li>
-                                <ShoppingCart size={27} color="#ffffff" alt="Shopping Cart" />
-                                <span>Meu carrinho</span>
+                                <User size={25} color="#ffffff" className='icon' alt="User" />
                             </li>
-                            <li className='box_list_myAccount'>
-                                <User size={27} color="#ffffff" className='icon' alt="User" />
-                                <span>Minha conta</span>
+                            <li className="shopping">
+                                <ShoppingBag size={25} color="#ffffff" />
+                                <span>0</span>
+                            </li>
+                            <li className="heart">
+                                <Heart size={25} color="#ffffff" />
+                                <span>0</span>
+                            </li>
+                            <li className='box_list' onClick={() => { setModal(true) }}>
+                                <Headset size={25} color="#ffffff" />
                             </li>
                         </ul>
                     </nav>
@@ -62,7 +64,7 @@ export function Header() {
             </section>
             <section className="box_slide">
                 {openmodal && (
-                    <>
+                    <section className="wrap_slide">
                         <div className="container_slide">
                             <button className="exit_slide" onClick={() => { setModal(false) }}>X</button>
                             <div className="group_attendance">
@@ -75,7 +77,7 @@ export function Header() {
                                 <div></div>
                             </div>
                         </div>
-                    </>
+                    </section>
                 )}
             </section>
         </>
